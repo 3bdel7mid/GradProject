@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    android:paddingStart="30dp"
+    android:paddingTop="60dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="30dp"
+    tools:context=".ui.fragments.signUpFragments.SubscriptionPlanFragment">
+
+    <TextView
+        android:id="@+id/subscribitionPlans_Fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscription_plans"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+    </RelativeLayout>

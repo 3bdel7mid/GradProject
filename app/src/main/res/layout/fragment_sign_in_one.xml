@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="60dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context=".ui.fragments.loginFragments.SignInOne">
+
+    <TextView
+        android:id="@+id/SignIN_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/mobile_number_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_number"
+        android:textStyle="normal"
+        android:textSize="24sp"
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="28dp"
+        android:layout_below="@id/SignIN_fragment_title"/>
+
+    <EditText
+        android:id="@+id/mobile_number_editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/mobile_number_view"
+        android:layout_marginTop="12dp"
+        tools:text="01095060914"
+        android:textSize="24sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical" />
+
+
+    <TextView
+        android:id="@+id/password_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textStyle="normal"
+        android:textSize="24sp"
+        android:textColor="@color/colorGrey"
+        android:layout_below="@id/mobile_number_editText"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password_view"
+        android:layout_marginTop="12dp"
+        android:gravity="start"
+        android:inputType="textVisiblePassword|textPassword"
+        android:password="true"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:id="@+id/Sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/my_button"
+        android:gravity="center"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/sign_in"
+        android:textColor="@color/colorwhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/password_editText"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:id="@+id/Forget_Password_Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/my_button"
+        android:text="@string/forget_password"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="center"
+        android:layout_below="@id/Sign_in_button"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>

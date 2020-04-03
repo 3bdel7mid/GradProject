@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="60dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="24dp"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context=".ui.fragments.loginFragments.MobileNumberFragment">
+
+    <TextView
+        android:id="@+id/Fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_mobile_number"
+        android:textSize="28sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Flag_Image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/Fragment_title"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/egypt_flag" />
+
+    <View
+        android:id="@+id/Fasla_PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        android:alpha=".3"
+        android:layout_alignBottom="@id/Flag_Image"/>
+
+    <TextView
+        android:id="@+id/Egypt_Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Flag_Image"
+        android:layout_alignTop="@id/Flag_Image"
+        android:layout_toEndOf="@+id/Flag_Image"
+        android:gravity="center"
+        android:layout_marginStart="12dp"
+        android:text="+02"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/Mobile_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Egypt_Code"
+        android:layout_alignTop="@id/Egypt_Code"
+        android:layout_alignBottom="@id/Egypt_Code"
+        android:layout_marginStart="18dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+        android:gravity="center_vertical"
+        android:background="@color/transparent"
+        android:hint="010"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/First_Terms_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Fasla_PhoneNumber"
+        android:layout_marginTop="18dp"
+        android:alpha=".65"
+        android:gravity="center"
+        android:text="@string/by_continuing_i_confirm_that_i_have_read_and_agree_to_the"
+        android:textColor="@color/colorBlack"
+        android:textSize="13.5sp" />
+
+    <TextView
+        android:id="@+id/Second_Terms_Line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/First_Terms_line"
+        android:layout_marginTop="18dp"
+        android:alpha=".65"
+        android:gravity="center"
+        android:text="@string/terms_and_conditions_and_privacy_policy"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/MobilePhone_Continue_Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/Second_Terms_Line"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/Continue"
+        android:textColor="@color/colorwhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/my_button"/>
+</RelativeLayout>
