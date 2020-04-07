@@ -37,11 +37,12 @@
         android:layout_height="50dp"
         android:layout_below="@id/mobile_number_view"
         android:layout_marginTop="12dp"
-        tools:text="01095060914"
-        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:inputType="number|phone"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
-        android:gravity="center_vertical" />
+        android:textSize="24sp"
+        tools:text="01095060914" />
 
 
     <TextView
@@ -62,7 +63,6 @@
         android:layout_below="@id/password_view"
         android:layout_marginTop="12dp"
         android:gravity="start"
-        android:inputType="textVisiblePassword|textPassword"
         android:password="true"
         android:textAlignment="viewStart" />
 

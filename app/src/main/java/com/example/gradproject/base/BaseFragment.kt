@@ -4,6 +4,9 @@ import android.app.ProgressDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.content.pm.PackageManager
+import android.graphics.PorterDuff
+import android.view.MotionEvent
+import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
@@ -64,5 +67,7 @@ open class BaseFragment : Fragment() {
         activity.hideLoadingDialog()
     }
 
-
+    fun ButtonEffect(button: View) {
+       return ButtonEffect(button);
+    }
 }

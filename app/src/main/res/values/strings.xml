@@ -44,4 +44,6 @@
     <string name="passport">Passport</string>
     <string name="subscription_plans">Subscription Plans</string>
     <string name="sign_up">Sign Up</string>
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
 </resources>

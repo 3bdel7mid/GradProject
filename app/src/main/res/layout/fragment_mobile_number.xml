@@ -65,6 +65,7 @@
         android:paddingEnd="0dp"
         android:gravity="center_vertical"
         android:background="@color/transparent"
+        android:inputType="number|phone"
         android:hint="010"
         android:textSize="22sp"
         android:textColor="@color/colorBlack"/>

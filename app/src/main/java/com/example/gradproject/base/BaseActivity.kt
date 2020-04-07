@@ -4,12 +4,17 @@ import android.Manifest
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.pm.PackageManager
+import android.graphics.PorterDuff
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainer
 import androidx.fragment.app.FragmentController
@@ -121,4 +126,20 @@ open class BaseActivity : AppCompatActivity() {
         }
     }
 
+    fun ButtonEffect(button: View) {
+        button.setOnTouchListener { v, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    v.background.setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat
+                        (-0x1f0b8adf,BlendModeCompat.SRC_ATOP))
+                    v.invalidate()
+                }
+                MotionEvent.ACTION_UP -> {
+                    v.background.clearColorFilter()
+                    v.invalidate()
+                }
+            }
+            false
+        }
+    }
 }

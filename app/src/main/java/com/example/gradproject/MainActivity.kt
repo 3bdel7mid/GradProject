@@ -23,6 +23,7 @@ class MainActivity : BaseActivity() {
                 .commit()}
 
         val signInButton:ImageView = findViewById(R.id.Sign_in_button)
+        ButtonEffect(signInButton)
         signInButton.setOnClickListener {
             val fragment:Fragment= SignInOne()
             supportFragmentManager.beginTransaction()
