@@ -66,6 +66,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         tools:text="4"
+        android:maxLength="1"
         android:textStyle="normal"
         android:gravity="center"
         android:textSize="32sp"
@@ -98,6 +99,7 @@
         android:inputType="number"
         android:textSize="32sp"
         android:textStyle="normal"
+        android:maxLength="1"
         tools:text="4" />
 
     <View
@@ -125,6 +127,7 @@
         android:inputType="number"
         android:textSize="32sp"
         android:textStyle="normal"
+        android:maxLength="1"
         tools:text="4" />
 
     <View
@@ -151,6 +154,7 @@
         android:inputType="number"
         android:textSize="32sp"
         android:textStyle="normal"
+        android:maxLength="1"
         tools:text="4" />
 
     <View

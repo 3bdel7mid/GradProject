@@ -1,18 +1,18 @@
 package com.example.gradproject.ui.fragments.loginFragments
 
 import android.content.DialogInterface
-import android.content.Intent
 import android.os.Bundle
-import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.fragment.app.Fragment
+import com.example.gradproject.MainActivity
 import com.example.gradproject.R
 import com.example.gradproject.base.BaseFragment
 import com.example.gradproject.base.DataHandler
-import com.example.gradproject.base.DataHandlerBase
+import kotlinx.android.synthetic.main.fragment_mobile_number.*
 
 /**
  * A simple [Fragment] subclass.
@@ -24,16 +24,25 @@ class MobileNumberFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mobile_number, container, false)
+        val v :View = inflater.inflate(R.layout.fragment_mobile_number, container, false)
+        return v
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val mobileNumber: Int = R.id.Mobile_Number
-        DataHandler.saveInt("The mobile number",mobileNumber)
+
+
         val mobileNumberContinueButton: Button =
             view.findViewById(R.id.MobilePhone_Continue_Button) as Button
         mobileNumberContinueButton.setOnClickListener {
+            var mobileNumber  = Mobile_Number.text.toString()
+
+            val otpFragment = OTPFragment()
+
+            val bundle = Bundle()
+            bundle.putString("number","mobilenumber")
+            otpFragment.setArguments(bundle)
+
             showMessage(R.string.Confirm,
                 R.string.verificationMessage, R.string.Send_OTP,
                 DialogInterface.OnClickListener { dialogInterface, i ->
@@ -48,6 +57,8 @@ class MobileNumberFragment : BaseFragment() {
                 }, true
             )
         }
+
+
     }
 
 }

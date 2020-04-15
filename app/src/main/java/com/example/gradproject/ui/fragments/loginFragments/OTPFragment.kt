@@ -1,16 +1,14 @@
 package com.example.gradproject.ui.fragments.loginFragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-
+import androidx.fragment.app.Fragment
 import com.example.gradproject.R
 import com.example.gradproject.base.DataHandler
-import com.example.gradproject.base.DataHandlerBase
 
 /**
  * A simple [Fragment] subclass.
@@ -23,6 +21,7 @@ class OTPFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_o_t_p, container, false)
+
         }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

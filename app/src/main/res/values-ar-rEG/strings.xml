@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GradProject</string>
+    <string name="loading">جاري التحميل</string>
+    <string name="enter_mobile_number">ادخل رقم الهاتف</string>
+    <string name="terms_and_conditions_and_privacy_policy">القواعد والقوانين وثيقة الامان</string>
+    <string name="Continue">اكمل</string>
+    <string name="Confirm">موافق</string>
+    <string name="by_continuing_i_confirm_that_i_have_read_and_agree_to_the">بالضغط علي زر المتابعة، انا اؤكد اني قرأت واوافق علي</string>
+    <string name="verificationMessage">سوف نرسل رمز التفعيل الي هاتف الان.</string>
+    <string name="Send_OTP">الارسال الي الهاتف</string>
+    <string name="Cancel">الغاء</string>
+    <string name="otp_verification">التفعيل عبر الهاتف</string>
+    <string name="four_digit_command">ادخل الاربع ارقام المرسلين الي الرقم</string>
+    <string name="submit">تأكيد</string>
+    <string name="resend_code">الأرسال مرة اخري</string>
+    <string name="reset_password">اعادة ضبط كلمة المرور</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="enter_your_new_password">ادخل كلمة مرور جديدة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="enter_your_password_again">أعد كتابة كلمة المرور</string>
+    <string name="reset">أعد الضبط</string>
+    <string name="edit">تغيير</string>
+    <string name="password">كلمة المرور</string>
+    <string name="mobile_number">رقم الهاتف</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="create_profile">انشاء الحساب</string>
+    <string name="home_address">عنوان المنزل</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="first_name">الاسم</string>
+    <string name="register">التسجيل</string>
+    <string name="bank_details">المعلومات البنكية</string>
+    <string name="bank_name">اسم البنك</string>
+    <string name="account_holder_name">اسم مالك الحساب</string>
+    <string name="account_number">رقم الحساب</string>
+    <string name="swift_ifsc_code">رقم التعريف البنكي</string>
+    <string name="next">التالي</string>
+    <string name="personal_documents">المستندات الشخصية</string>
+    <string name="birth_certificate">بطاقة الرقم القومي</string>
+    <string name="upload">ارفع</string>
+    <string name="driving_licence">رخصة القيادة</string>
+    <string name="passport">جواز السفر</string>
+    <string name="subscription_plans">خطط الاشتراك</string>
+    <string name="sign_up">انشئ حساب</string>
+    <string name="title_activity_maps">خريطة</string>
+</resources>

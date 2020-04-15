@@ -107,24 +107,6 @@ open class BaseActivity : AppCompatActivity() {
         )
     }
 
-    fun showUserLocation() {
-        Toast.makeText(this, "Permission GRANTED...", Toast.LENGTH_LONG)
-    }
-
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        if (requestCode == Access_Location_Code) {
-            if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
-                showUserLocation()
-            } else {
-                Toast.makeText(this, "REQUEST DENIED", Toast.LENGTH_LONG)
-            }
-        }
-    }
 
     fun ButtonEffect(button: View) {
         button.setOnTouchListener { v, event ->
