@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.gradproject.base.BaseActivity
-import com.example.gradproject.ui.fragments.loginFragments.MobileNumberFragment
 import com.example.gradproject.ui.fragments.loginFragments.SignInOne
 import com.example.gradproject.ui.fragments.signUpFragments.SignUpOne
 

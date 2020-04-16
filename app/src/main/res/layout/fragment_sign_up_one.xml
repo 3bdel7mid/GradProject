@@ -43,12 +43,11 @@
             android:id="@+id/Add_Button"
             android:layout_width="125dp"
             android:layout_height="125dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="80dp"
             android:src="@drawable/ic_add_black_24dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/CreateProfile_Fragment_title"
-            android:layout_marginTop="80dp"
-            android:layout_marginStart="170dp"
-             />
+            app:layout_constraintTop_toBottomOf="@id/CreateProfile_Fragment_title" />
 
         <TextView
             android:id="@+id/First_name_view"
@@ -61,20 +60,20 @@
             android:textSize="24sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/profile_image"/>
+            app:layout_constraintTop_toBottomOf="@id/profile_image" />
 
         <EditText
             android:id="@+id/First_name_editText"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="8dp"
             android:alpha=".5"
+            android:hint="Mohamed"
             android:textColor="@color/colorBlack"
             android:textSize="22sp"
-            android:layout_marginTop="8dp"
-            android:hint="Mohamed"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/First_name_view"/>
+            app:layout_constraintTop_toBottomOf="@id/First_name_view" />
 
         <TextView
             android:id="@+id/last_name_view"
@@ -87,20 +86,20 @@
             android:textSize="24sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/First_name_editText"/>
+            app:layout_constraintTop_toBottomOf="@id/First_name_editText" />
 
         <EditText
             android:id="@+id/last_name_editText"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="8dp"
             android:alpha=".5"
+            android:hint="Abdelhamid"
             android:textColor="@color/colorBlack"
             android:textSize="22sp"
-            android:layout_marginTop="8dp"
-            android:hint="Abdelhamid"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/last_name_view"/>
+            app:layout_constraintTop_toBottomOf="@id/last_name_view" />
 
         <TextView
             android:id="@+id/MobileNumber_CreateProfile_view_Fragment"
@@ -114,21 +113,21 @@
             android:textSize="24sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/last_name_editText"/>
+            app:layout_constraintTop_toBottomOf="@id/last_name_editText" />
 
         <EditText
             android:id="@+id/MobileNumber_CreateProfile_editText_Fragment"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="8dp"
             android:alpha=".5"
+            android:hint="0102569841"
             android:inputType="number"
             android:textColor="@color/colorBlack"
             android:textSize="22sp"
-            android:layout_marginTop="8dp"
-            android:hint="0102569841"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/MobileNumber_CreateProfile_view_Fragment"/>
+            app:layout_constraintTop_toBottomOf="@id/MobileNumber_CreateProfile_view_Fragment" />
 
         <TextView
             android:id="@+id/Home_address_view"
@@ -141,20 +140,20 @@
             android:textSize="24sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/MobileNumber_CreateProfile_editText_Fragment"/>
+            app:layout_constraintTop_toBottomOf="@id/MobileNumber_CreateProfile_editText_Fragment" />
 
         <EditText
             android:id="@+id/Home_address_editText"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="8dp"
             android:alpha=".5"
+            android:hint="2 el-abyari Street, Elharam"
             android:textColor="@color/colorBlack"
             android:textSize="22sp"
-            android:layout_marginTop="8dp"
-            android:hint="2 el-abyari Street, Elharam"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Home_address_view"/>
+            app:layout_constraintTop_toBottomOf="@id/Home_address_view" />
 
         <TextView
             android:id="@+id/password_view_CreateProfile_Fragment"
@@ -167,21 +166,21 @@
             android:textSize="24sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Home_address_editText"/>
+            app:layout_constraintTop_toBottomOf="@id/Home_address_editText" />
 
         <EditText
             android:id="@+id/password_editText_CreateProfile_fragment"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
             android:alpha=".5"
+            android:hint="**********"
+            android:inputType="textPassword"
             android:textColor="@color/colorBlack"
             android:textSize="22sp"
-            android:layout_marginTop="8dp"
-            android:hint="**********"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/password_view_CreateProfile_Fragment"/>
+            app:layout_constraintTop_toBottomOf="@id/password_view_CreateProfile_Fragment" />
 
         <TextView
             android:id="@+id/Command"
@@ -194,7 +193,7 @@
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/password_editText_CreateProfile_fragment"/>
+            app:layout_constraintTop_toBottomOf="@id/password_editText_CreateProfile_fragment" />
 
         <TextView
             android:id="@+id/Command_two"
@@ -207,7 +206,7 @@
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Command"/>
+            app:layout_constraintTop_toBottomOf="@id/Command" />
 
         <Button
             android:id="@+id/register_button"
@@ -222,6 +221,6 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Command_two"/>
+            app:layout_constraintTop_toBottomOf="@id/Command_two" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

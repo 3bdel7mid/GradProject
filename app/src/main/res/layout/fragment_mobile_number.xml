@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingTop="60dp"
-    android:paddingStart="30dp"
-    android:paddingEnd="24dp"
-    android:orientation="vertical"
     android:background="@color/colorwhite"
+    android:orientation="vertical"
+    android:paddingStart="30dp"
+    android:paddingTop="60dp"
+    android:paddingEnd="24dp"
     tools:context=".ui.fragments.loginFragments.MobileNumberFragment">
 
     <TextView
         android:id="@+id/Fragment_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_mobile_number"
-        android:textSize="28sp"
-        android:textColor="@color/colorBlack"
-        android:textStyle="bold"
         android:layout_alignParentTop="true"
+        android:text="@string/enter_mobile_number"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/Flag_Image"
@@ -30,30 +30,30 @@
         android:layout_marginTop="40dp"
         android:src="@drawable/egypt_flag"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Fragment_title"/>
+        app:layout_constraintTop_toBottomOf="@id/Fragment_title" />
 
     <View
         android:id="@+id/Fasla_PhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="3dp"
-        android:background="@color/colorPrimaryDark"
         android:alpha=".3"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Flag_Image"/>
+        app:layout_constraintTop_toBottomOf="@id/Flag_Image" />
 
     <TextView
         android:id="@+id/Egypt_Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginStart="12dp"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:text="+02"
         android:textColor="@color/colorBlack"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@id/Flag_Image"
-        app:layout_constraintTop_toBottomOf="@id/Fragment_title"/>
+        app:layout_constraintTop_toBottomOf="@id/Fragment_title" />
 
     <EditText
         android:id="@+id/Mobile_Number"
@@ -61,15 +61,15 @@
         android:layout_height="40dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="46dp"
-        android:gravity="center_vertical"
         android:background="@color/transparent"
-        android:inputType="number|phone"
+        android:gravity="center_vertical"
         android:hint="010"
-        android:textSize="24sp"
+        android:inputType="number|phone"
         android:textColor="@color/colorBlack"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/Egypt_Code"
-        app:layout_constraintTop_toBottomOf="@id/Fragment_title"/>
+        app:layout_constraintTop_toBottomOf="@id/Fragment_title" />
 
     <TextView
         android:id="@+id/First_Terms_line"
@@ -84,7 +84,7 @@
         android:textSize="13.5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Fasla_PhoneNumber"/>
+        app:layout_constraintTop_toBottomOf="@id/Fasla_PhoneNumber" />
 
     <TextView
         android:id="@+id/Second_Terms_Line"
@@ -94,24 +94,24 @@
         android:alpha=".65"
         android:gravity="center"
         android:text="@string/terms_and_conditions_and_privacy_policy"
-        android:textStyle="bold"
         android:textColor="@color/colorBlack"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/First_Terms_line"/>
+        app:layout_constraintTop_toBottomOf="@id/First_Terms_line" />
 
     <Button
         android:id="@+id/MobilePhone_Continue_Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/my_button"
         android:text="@string/Continue"
         android:textColor="@color/colorwhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:background="@drawable/my_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Second_Terms_Line"/>
+        app:layout_constraintTop_toBottomOf="@id/Second_Terms_Line" />
 </androidx.constraintlayout.widget.ConstraintLayout>

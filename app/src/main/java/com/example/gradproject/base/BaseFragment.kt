@@ -3,11 +3,7 @@ package com.example.gradproject.base
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.DialogInterface
-import android.content.pm.PackageManager
-import android.graphics.PorterDuff
-import android.view.MotionEvent
 import android.view.View
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
 
@@ -28,13 +24,15 @@ open class BaseFragment : Fragment() {
         negativeAction: DialogInterface.OnClickListener?,
         isCancellable: Boolean
     ) {
-        activity.showMessage(title,
+        activity.showMessage(
+            title,
             message,
             posActionName,
             posAction,
             negativeActionName,
             negativeAction,
-            isCancellable)
+            isCancellable
+        )
     }
 
 
@@ -47,27 +45,30 @@ open class BaseFragment : Fragment() {
         negativeAction: DialogInterface.OnClickListener?,
         isCancellable: Boolean
     ) {
-        activity.showMessage(title,
+        activity.showMessage(
+            title,
             message,
             posActionName,
             posAction,
             negativeActionName,
             negativeAction,
-            isCancellable)
+            isCancellable
+        )
     }
 
-    fun isPermissionGranted(permission: String):Boolean{
+    fun isPermissionGranted(permission: String): Boolean {
         return isPermissionGranted(permission)
     }
 
-    fun showLoadingDialog(loadingMessage:String):ProgressDialog?{
+    fun showLoadingDialog(loadingMessage: String): ProgressDialog? {
         return showLoadingDialog(loadingMessage)
     }
-    fun hideLoadingDialog(){
+
+    fun hideLoadingDialog() {
         activity.hideLoadingDialog()
     }
 
     fun ButtonEffect(button: View) {
-       return ButtonEffect(button);
+        return ButtonEffect(button)
     }
 }

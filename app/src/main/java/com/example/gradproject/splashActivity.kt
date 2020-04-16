@@ -1,10 +1,9 @@
 package com.example.gradproject
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import androidx.core.content.ContextCompat.startActivity
+import androidx.appcompat.app.AppCompatActivity
 
 class splashActivity : AppCompatActivity() {
 
@@ -15,12 +14,12 @@ class splashActivity : AppCompatActivity() {
     }
 
     private fun StartNewActivity() {
-        val handler = Handler();
+        val handler = Handler()
         handler.postDelayed(Runnable {
-            val intent = Intent(this,MainActivity::class.java);
-            startActivity(intent);
-            finish();
-        },4000)
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, 4000)
     }
 
 }

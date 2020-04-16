@@ -9,26 +9,26 @@ class DataHandler {
         private val preferencesName = "app-prefrences"
 
         fun init(context: Context) {
-            sharedPreferences = context.getSharedPreferences(preferencesName,Context.MODE_PRIVATE)
+            sharedPreferences = context.getSharedPreferences(preferencesName, Context.MODE_PRIVATE)
         }
 
-        fun getString(key:String, defValue:String):String?{
+        fun getString(key: String, defValue: String): String? {
             return sharedPreferences.getString(key, defValue)
         }
 
-        fun getInt(key:String, defValue:Int):Int?{
+        fun getInt(key: String, defValue: Int): Int? {
             return sharedPreferences.getInt(key, defValue)
         }
 
-        fun saveString(key:String, value:String?){
-            val editor=sharedPreferences.edit()
-            editor.putString(key,value)
+        fun saveString(key: String, value: String?) {
+            val editor = sharedPreferences.edit()
+            editor.putString(key, value)
             editor.apply()
         }
 
-        fun saveInt(key:String, value:Int){
-            val editor=sharedPreferences.edit()
-            editor.putInt(key,value)
+        fun saveInt(key: String, value: Int) {
+            val editor = sharedPreferences.edit()
+            editor.putInt(key, value)
             editor.apply()
         }
 

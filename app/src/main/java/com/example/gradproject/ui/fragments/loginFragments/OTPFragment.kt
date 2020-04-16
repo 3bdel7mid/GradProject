@@ -22,18 +22,18 @@ class OTPFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_o_t_p, container, false)
 
-        }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val mobileNumber: Int? = DataHandler.getInt("the mobile number",0)
+        val mobileNumber: Int? = DataHandler.getInt("the mobile number", 0)
 
-        val mobileNumberView:TextView=
+        val mobileNumberView: TextView =
             view.findViewById(R.id.mobilePhone_Number_fourDigits)
 
-     mobileNumberView.setText(mobileNumber.toString())
+        mobileNumberView.text = mobileNumber.toString()
 
-        val editMobileNumber:TextView = view.findViewById(R.id.edit_mobile_number)
+        val editMobileNumber: TextView = view.findViewById(R.id.edit_mobile_number)
 
         val submitFourDigitsNumber: Button =
             view.findViewById(R.id.submit_four_digits_button) as Button

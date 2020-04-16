@@ -4,22 +4,15 @@ import android.Manifest
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.pm.PackageManager
-import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentContainer
-import androidx.fragment.app.FragmentController
-import com.example.gradproject.R
-import com.example.gradproject.ui.fragments.loginFragments.MobileNumberFragment
 
 open class BaseActivity : AppCompatActivity() {
 
@@ -112,8 +105,10 @@ open class BaseActivity : AppCompatActivity() {
         button.setOnTouchListener { v, event ->
             when (event.action) {
                 MotionEvent.ACTION_DOWN -> {
-                    v.background.setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat
-                        (-0x1f0b8adf,BlendModeCompat.SRC_ATOP))
+                    v.background.setColorFilter(
+                        BlendModeColorFilterCompat.createBlendModeColorFilterCompat
+                            (-0x1f0b8adf, BlendModeCompat.SRC_ATOP)
+                    )
                     v.invalidate()
                 }
                 MotionEvent.ACTION_UP -> {

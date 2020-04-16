@@ -6,13 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
 import androidx.fragment.app.Fragment
-import com.example.gradproject.MainActivity
 import com.example.gradproject.R
 import com.example.gradproject.base.BaseFragment
-import com.example.gradproject.base.DataHandler
-import kotlinx.android.synthetic.main.fragment_mobile_number.*
 
 /**
  * A simple [Fragment] subclass.
@@ -30,7 +26,6 @@ class MobileNumberFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         val mobileNumberContinueButton: Button =
             view.findViewById(R.id.MobilePhone_Continue_Button) as Button
