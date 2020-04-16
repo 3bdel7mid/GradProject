@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +18,9 @@
         android:text="@string/sign_in"
         android:textStyle="bold"
         android:textSize="28sp"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/mobile_number_view"
@@ -29,19 +31,22 @@
         android:textSize="24sp"
         android:textColor="@color/colorGrey"
         android:layout_marginTop="28dp"
-        android:layout_below="@id/SignIN_fragment_title"/>
+        app:layout_constraintTop_toBottomOf="@id/SignIN_fragment_title"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:id="@+id/mobile_number_editText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/mobile_number_view"
         android:layout_marginTop="12dp"
         android:gravity="center_vertical"
         android:inputType="number|phone"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobile_number_view"
         tools:text="01095060914" />
 
 
@@ -53,23 +58,26 @@
         android:textStyle="normal"
         android:textSize="24sp"
         android:textColor="@color/colorGrey"
-        android:layout_below="@id/mobile_number_editText"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobile_number_editText"/>
 
     <EditText
         android:id="@+id/password_editText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/password_view"
         android:layout_marginTop="12dp"
         android:gravity="start"
         android:password="true"
-        android:textAlignment="viewStart" />
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_view"/>
 
     <Button
         android:id="@+id/Sign_in_button"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:background="@drawable/my_button"
         android:gravity="center"
         android:lineSpacingExtra="12sp"
@@ -77,20 +85,23 @@
         android:textColor="@color/colorwhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_below="@id/password_editText"
-        android:layout_marginTop="18dp"/>
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_editText"/>
 
     <Button
         android:id="@+id/Forget_Password_Button"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/my_button"
+        android:layout_height="55dp"
+        android:background="@drawable/my_button_transparent"
         android:text="@string/forget_password"
         android:textSize="20sp"
         android:textColor="@color/colorPrimary"
-        android:backgroundTint="@android:color/transparent"
         android:gravity="center"
-        android:layout_below="@id/Sign_in_button"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Sign_in_button"/>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
