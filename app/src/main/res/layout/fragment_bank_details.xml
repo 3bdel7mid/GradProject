@@ -9,7 +9,7 @@
     android:paddingStart="30dp"
     android:paddingTop="60dp"
     android:paddingEnd="24dp"
-    android:paddingBottom="30dp"
+    android:paddingBottom="20dp"
     tools:context=".ui.fragments.signUpFragments.BankDetailsFragment">
 
     <TextView

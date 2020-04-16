@@ -44,4 +44,25 @@
     <string name="subscription_plans">خطط الاشتراك</string>
     <string name="sign_up">انشئ حساب</string>
     <string name="title_activity_maps">خريطة</string>
+    <string name="the_trial">The Trial</string>
+    <string name="_1_free_ride">1 Free Ride</string>
+    <string name="try_free">TRY FREE</string>
+    <string name="classic_plan">Classic Plan</string>
+    <string name="solid_cars_only">*Solid cars Only</string>
+    <string name="up_to_5000_kilometres">*Up to 5000 Kilometres</string>
+    <string name="one_ride_available_everyday">*One ride available Everyday</string>
+    <string name="premium_plan">Premium Plan</string>
+    <string name="up_to_3_rides_everyday">*Up to 3 rides Everyday</string>
+    <string name="solid_convertible_and_suv_cars">*Solid, Convertible and SUV Cars</string>
+    <string name="enterprise_plan">Enterprise Plan</string>
+    <string name="up_to_5_rides_everday">*Up to 5 rides Everday</string>
+    <string name="up_to_30000_kilometres">*Up to 30000 Kilometres</string>
+    <string name="all_cars_types_available">*All Cars types Available</string>
+    <string name="up_to_10000_kilometres">*Up to 10000 Kilometres</string>
+    <string name="buy_at_egp7500_00">BUY AT EGP7500,00</string>
+    <string name="buy_at_egp10000_00">BUY AT EGP10000,00</string>
+    <string name="buy_at_egp15000_00">BUY AT EGP15000,00</string>
+    <string name="_3_months">3 Months</string>
+    <string name="_6_months">6 Months</string>
+    <string name="_1_year">1 Year</string>
 </resources>

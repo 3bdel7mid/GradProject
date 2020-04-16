@@ -26,7 +26,7 @@ class BankDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         next_button.setOnClickListener {
-            val fragment = BankDetailsFragment()
+            val fragment = PersonalDecumentsFragment()
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container, fragment)
