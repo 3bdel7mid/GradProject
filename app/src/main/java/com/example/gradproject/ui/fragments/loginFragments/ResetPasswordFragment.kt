@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.gradproject.R
+import kotlinx.android.synthetic.main.fragment_reset_password.*
 
 /**
  * A simple [Fragment] subclass.
@@ -19,6 +20,22 @@ class ResetPasswordFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_reset_password, container, false)
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        reset_button.setOnClickListener {
+            val fragment = SignInOne()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragment_container, fragment)
+            fragmentTransaction.remove(OTPFragment())
+            fragmentTransaction.commit()
+            fragmentTransaction.remove(ResetPasswordFragment())
+
+        }
+
     }
 
 }

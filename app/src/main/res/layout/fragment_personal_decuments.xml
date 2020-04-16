@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -168,6 +167,7 @@
         android:textStyle="bold|italic" />
 
     <Button
+        android:id="@+id/personal_decoument_nex_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/Command_two"

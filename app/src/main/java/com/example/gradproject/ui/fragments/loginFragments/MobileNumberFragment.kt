@@ -35,14 +35,6 @@ class MobileNumberFragment : BaseFragment() {
         val mobileNumberContinueButton: Button =
             view.findViewById(R.id.MobilePhone_Continue_Button) as Button
         mobileNumberContinueButton.setOnClickListener {
-            var mobileNumber  = Mobile_Number.text.toString()
-
-            val otpFragment = OTPFragment()
-
-            val bundle = Bundle()
-            bundle.putString("number","mobilenumber")
-            otpFragment.setArguments(bundle)
-
             showMessage(R.string.Confirm,
                 R.string.verificationMessage, R.string.Send_OTP,
                 DialogInterface.OnClickListener { dialogInterface, i ->
