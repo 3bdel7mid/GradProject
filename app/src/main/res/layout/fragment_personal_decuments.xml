@@ -69,7 +69,6 @@
         android:id="@+id/Birth_Certificate_comma"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_below="@id/Birth_Certificate_View"
         android:layout_marginTop="24dp"
         android:alpha=".5"
         android:background="@color/colorGrey"

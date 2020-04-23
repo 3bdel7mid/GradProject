@@ -6,5 +6,6 @@
     <color name="colorBlack">#000</color>
     <color name="colorGrey">#7F7F7F</color>
     <color name="transparent">@android:color/transparent</color>
+    <color name="colorBlue">#00f</color>
 
 </resources>
